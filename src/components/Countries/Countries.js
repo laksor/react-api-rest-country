@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Load from '../Load/Load';
 import './Countries.css';
 
 
@@ -13,7 +14,7 @@ const Countries = () => {
         <div>
             <h2>Country:{countries.length}</h2>
             {
-                countries.map(country => console.log(country))
+                countries.map(country => <Load name={country.name.common}></Load>)
             }
         </div>
     );
