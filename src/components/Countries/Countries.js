@@ -14,7 +14,7 @@ const Countries = () => {
         <div>
             <h2>Country:{countries.length}</h2>
             {
-                countries.map(country => <Load name={country.name.common}></Load>)
+                countries.map(country => <Load name={country.name.common} population={country.population}></Load>)
             }
         </div>
     );
