@@ -12,7 +12,7 @@ const Countries = () => {
     return (
     <div className='country'>
         {
-            countries.map(country => <Load country={country}></Load>)
+            countries.map(country => <Load country={country} key={country.cca3}></Load>)
         }
     </div>
     );
