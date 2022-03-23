@@ -10,14 +10,14 @@ const Countries = () => {
             .then(data => setCountries(data))
     },[])
     return (
-    <div>
-        <h2>Country:{countries.length}</h2>
+    <div className='country'>
         {
             countries.map(country => <Load 
                 name={country.name.common} 
                 population={country.population} 
                 flag={country.flags.png}
                 capital={country.capital}
+                region={country.region}
                 ></Load>)
         }
     </div>

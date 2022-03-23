@@ -3,7 +3,7 @@ import './Header.css'
 const Header = () => {
     return (
         <div>
-            <h1>Welcome to header</h1>
+            <h1>All country in one site</h1>
         </div>
     );
 };
